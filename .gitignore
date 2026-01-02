@@ -1,0 +1,7 @@
+.env
+
+# json's file
+*.json
+!my_settings.json
+
+notebooks
