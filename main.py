@@ -6,17 +6,6 @@ def multiply(a, b):
     return a * b
 
 
-# TODO: example with args and kwargs
-
-def main(a, b):
-    print(f'multiplication: 3 + 3 = {multiply(a, b)}')
-    print(f'Sum: 3 + 3 = {sum(a, b)}')
-
-if __name__ == '__main__':
-    try:
-        a, b = '3', 3
-        main(a, b)
-    except TypeError as err:
-        print(err)
-        a, b = 3, 3
-        main(a, b)
+a, b = 3, 3
+print(f'multiplication: {a} * {b} = {multiply(a, b)}')
+print(f'Sum: {a} + {b} = {sum(a, b)}')
